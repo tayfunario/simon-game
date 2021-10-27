@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <audio id="clip1">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+    </audio>
+    <audio id="clip2">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+    </audio>
+    <audio id="clip3">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+    </audio>
+    <audio id="clip4">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+    </audio>
+    <link rel="stylesheet" href="style.css">
+    <title>Simon</title>
+</head>
+
+<body>
+    <div class="info">
+        <div class="info-btn">X</div>
+        <h2 class="info-title">Nasıl Oynanır?</h2>
+        <p class="info-text">Simon Game bir hafıza oyunudur.Bilgisayar size sıralamayı gösterir ve sizin seçim yapmanızı bekler. Eğer kazanırsanız sonraki seviyede bu sefer bir renk fazla doğru tahmin etmeniz gerekir. Yanlış rengi seçerseniz tüm renkleri yakarak bunu size
+            bildirir ve 'start' butonuna basarak tekrar başlatmanızı bekler. Normal moddaysanız kaldığınız seviyeden tekrar başlarsınız. Strict modundaysanız ilk bölüme geri dönersiniz. İyi şanslar!</p>
+    </div>
+
+    <div class="container">
+        <div class="outer-circle">
+            <div class="center">
+                <h1>SIMON!</h1>
+                <div class="buttons">
+                    <input type="checkbox" name="power" id="power" size="5">
+                    <input type="button" value="START" id="start-btn" disabled>
+                    <input type="checkbox" name="strict" id="strict">
+                </div>
+                <div class="buttons-text">
+                    <span id="power-text">POWER</span>
+                    <span id="strict-text">STRICT</span>
+                </div>
+                <div class="counter"></div>
+                <div class="counter-text">Level</div>
+            </div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="red"></div>
+            <div class="yellow"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

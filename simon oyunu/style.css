@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Original Surfer', cursive;
+}
+
+body {
+    background-color: #999999;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: #666;
+    z-index: 100;
+}
+
+.hide-info {
+    display: none;
+}
+
+.info-btn {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease-in;
+}
+
+.info-btn:hover {
+    background-color: #F00000;
+}
+
+.info-title {
+    margin-top: 10rem;
+    color: red;
+    text-align: center;
+}
+
+.info-text {
+    color: white;
+    margin: auto;
+    width: 70%;
+}
+
+.outer-circle {
+    width: 40rem;
+    height: 40rem;
+    border: 10px solid black;
+    border-radius: 100%;
+    margin: 3rem auto;
+    box-shadow: 0px 5px 10px 10px #666666;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.center {
+    background-color: gray;
+    width: 57%;
+    height: 57%;
+    position: absolute;
+    align-self: center;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid black;
+    border-radius: 100%;
+}
+
+.center h1 {
+    font-size: 3.5rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.buttons {
+    margin: 3rem auto;
+    margin-bottom: 0.1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons #start-btn {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+#power,
+#strict {
+    width: 20px;
+    height: 20px;
+}
+
+.buttons-text {
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    width: 90px;
+    height: 70px;
+    background-color: black;
+    margin: auto;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.counter-text {
+    width: 90px;
+    height: 70px;
+    margin: 5px auto;
+    text-align: center;
+    font-size: 22px;
+}
+
+.green {
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    display: inline-block;
+}
+
+.blue {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(0, 0, 192);
+    display: inline-block;
+}
+
+.red {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(204, 0, 0);
+    display: inline-block;
+}
+
+.yellow {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(199, 199, 22);
+    display: inline-block;
+}
+
+.lighter-green {
+    background-color: chartreuse;
+}
+
+.lighter-blue {
+    background-color: rgb(0, 60, 255);
+}
+
+.lighter-red {
+    background-color: red;
+}
+
+.lighter-yellow {
+    background-color: yellow;
+}
